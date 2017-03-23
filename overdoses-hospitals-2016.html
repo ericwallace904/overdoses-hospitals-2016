@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Overdoses by Zip Codes & Destination Hospitals</title>
+	
+	
+	<!-- Mobile meta tags, taken from Chris Essig tutorial @csessig86 -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="MobileOptimized" content="320"/>
+	<meta http-equiv="cleartype" content="on">
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<link rel="stylesheet" href="css/od-hospitals-style.css" />
+</head>
+<body>
+	<div id="map"></div>
+	
+	<!-- JS libraries -->
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+	<script type="text/javascript" src="js/chroma.min.js"></script>
+	
+	<!-- data sources -->
+	<script src="json/overdoses-hospitals-2016.json"></script>
+	<script src="json/overdoses-zip-2016.geojson"></script>
+	
+	<!-- JS to create map -->
+	<script src="js/overdoses-hospitals-2016-script.js"></script>
+</body>
+</html>
